@@ -1,0 +1,11 @@
+version: "Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)"
+options: "537ced514dbf5424bcb290b910ca2638"
+build_time: [1583218101, 172078000]
+inputs:
+  "/Users/JenishMistry/DEMOS/ContactList/ContactList/ContactTableViewCell.swift": [1580816907, 223150096]
+  "/Users/JenishMistry/DEMOS/ContactList/ContactList/ViewController.swift": [1580819332, 506050659]
+  "/Users/JenishMistry/DEMOS/ContactList/ContactList/AppDelegate.swift": [1580794315, 276452449]
+  "/Users/JenishMistry/DEMOS/ContactList/ContactList/SceneDelegate.swift": [1580794315, 285803156]
+  "/Users/JenishMistry/DEMOS/ContactList/ContactList/PhoneContactsModel.swift": [1580817332, 859494481]
+  "/Users/JenishMistry/DEMOS/ContactList/ContactList/PhoneContacts.swift": [1580817026, 651506199]
+  "/Users/JenishMistry/DEMOS/ContactList/ContactList/UIViewExtenstions.swift": [1577860339, 285836370]

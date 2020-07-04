@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="s4S-NR-aBl">
+                                <rect key="frame" x="0.0" y="62" width="320" height="506"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="rLN-03-3bg"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="2OH-21-dyK"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mUp-gr-zH1">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contacts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EGg-nP-EiR">
+                                        <rect key="frame" x="123" y="25" width="74.5" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="uQw-JW-HEP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.12549019607843137" green="0.25098039215686274" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="EGg-nP-EiR" firstAttribute="centerX" secondItem="mUp-gr-zH1" secondAttribute="centerX" id="gvn-bI-cc8"/>
+                                    <constraint firstAttribute="height" constant="60" id="rLD-yW-hfz"/>
+                                    <constraint firstAttribute="bottom" secondItem="EGg-nP-EiR" secondAttribute="bottom" constant="10" id="xMk-qh-aof"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="s4S-NR-aBl" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="DEf-w6-YPr"/>
+                            <constraint firstItem="s4S-NR-aBl" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="GRm-vf-YTx"/>
+                            <constraint firstItem="s4S-NR-aBl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Qnb-3f-N0q"/>
+                            <constraint firstItem="mUp-gr-zH1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ahc-2O-gfh"/>
+                            <constraint firstItem="s4S-NR-aBl" firstAttribute="top" secondItem="mUp-gr-zH1" secondAttribute="bottom" constant="2" id="gyY-VN-3rA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mUp-gr-zH1" secondAttribute="trailing" id="h9c-pM-DCn"/>
+                            <constraint firstItem="mUp-gr-zH1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="skM-3O-vXe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="s4S-NR-aBl" id="096-cQ-XDe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.25" y="138.38028169014083"/>
+        </scene>
+    </scenes>
+</document>
